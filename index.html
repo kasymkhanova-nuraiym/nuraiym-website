@@ -1,88 +1,128 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My First Webpage</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT-2401</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <h1 id="main-heading">🎀 Kasymkhanova Nuraiym Erlankyzy IT-2401 🎀</h1>
-    <hr>
+  <header>
+    <nav>
+      <a href="#" onclick="showPage('main')">Main</a>
+      <a href="#" onclick="showPage('moments')">Moments</a>
+      <a href="#" onclick="showPage('info')">Info</a>
+    </nav>
+  </header>
 
-    <h2>About me</h2>
-    <p style="color:rgb(0, 0, 0);">I was born in Kostanai in April 2007. Graduated from school with "Altyn belgi". Now I'm a computer science student at Astana IT University.</p>
-    <h3>This is how I look☺️</h3>
-    <img src="IMG_2103.HEIC" alt="Me">
-
-    <h4>My programming skills</h4>
-    <ul><li>1st year</li></ul>
-    <ol><li>C++</li><li>Python</li><li>OOP Java</li><li>Assembly programming</li></ol>
-    <ul><li>2nd year</li></ul>
-    <ol><li>C#</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ol>
-
-    <section class="float-container">
-        <article class="float-box left">🎨 My hobbies: reading, painting, writing stories, decorating my notes</article>
-        <article class="float-box right">🎯 My goals: becoming a programmer with strong knowledge</article>
+  <main>
+    <!-- === Главная страница === -->
+    <section id="main" class="page active">
+      <h1>IT-2401</h1>
+      <video controls src="video1.MOV"></video>
+      <div class="buttons">
+        <button onclick="showHearts()">I'm from IT-2401</button>
+        <button onclick="showWave()">I'm a guest</button>
+      </div>
     </section>
 
-    <h4>Learning English 📈</h4>
-    <a href="https://www.esl-lounge.com/student/reference/b2-cefr-vocabulary-word-list.php">ESL lounge 💡</a>
-    <p class="highlight">Best way to train listening skills — movies in English with subtitles!</p>
-    <a href="https://vampirediares.com/1-season-04/">My favorite TVD 😍🧛</a>
+    <!-- === Moments === -->
+    <section id="moments" class="page">
+      <h1>Moments 💫</h1>
+      <img src="img5.HEIC" style="width: 450px; border: 4px solid #000000; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);">
+      <p>Our best memories!</p>
+      <div class="gallery">
+        <img src="img1.HEIC">
+        <video controls src="videao2.MOV"></video>
+        <img src="img3.HEIC">
+        <video controls src="vidoe4.MOV"></video>
+        <img src="img6.JPG">
+        <video controls src="video8.MOV"></video> 
+        <img src="img2.heic"> 
+        <video controls src="video5.MOV"></video> 
+        <video controls src="video6.MOV"></video> 
+        <video controls src="video7.MOV"></video> 
+        <video controls src="vodio9.MOV"></video> 
+        <img src="img7.heic">
+      </div>
+    </section>
 
-    <h3>Is this type of movie interesting for you?</h3>
-    <button>YES 👍</button>
-    <button>NO 👎</button>
+    <!-- === Info === -->
+    <section id="info" class="page">
+      <div class="info-container">
+        <div class="info-content">
+          <h1>About IT-2401</h1>
+          <p>I tried to show our happy moments. There are friendly boys and girls in our group. We love each other. We try to keep a lot of memories during our student life. We are a creative, technology-loving group of students studying programming, design, and teamwork. Our goal is to grow together and create cool projects! </p>
+          <img src="image.png" width="700px">
+          <br><hr>
+          <img src="img88.png" width="700px">
+          <h3>If you would like to cooperate or learn more about us, do not hesitate to contact us and view our websites!!</h3>
 
-    <table>
-        <caption>My Weekly Class Schedule</caption>
-        <thead>
-            <tr><th>Subject</th><th>Day</th><th>Time</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>Analytic Geometry</td><td rowspan="2">Monday</td><td>14:00 - 16:00</td></tr>
-            <tr><td>Front End</td><td>16:00 - 18:00</td></tr>
-            <tr><td>Computer organization</td><td rowspan="2">Tuesday</td><td>13:00 - 14:00</td></tr>
-            <tr><td>Functional Programming</td><td>14:00 - 16:00</td></tr>
-            <tr><td>Front End</td><td rowspan="3">Wednesday</td><td>13:00 - 14:00</td></tr>
-            <tr><td>Russian C1</td><td>14:00 - 16:00</td></tr>
-            <tr><td>Front End</td><td>16:00 - 18:00</td></tr>
-            <tr><td>Functional Programming</td><td rowspan="3">Thursday</td><td>13:00 - 14:00</td></tr>
-            <tr><td>Front End</td><td>14:00 - 16:00</td></tr>
-            <tr><td>Analytic Geometry</td><td>16:00 - 18:00</td></tr>
-        </tbody>
-    </table>
+        </div>
+        <aside class="sidebar">
+          <h4>Contact Info</h4>
+          <p>📱Instagram: <a href="https://www.instagram.com/slayyyyy_queenz?igsh=N2UyZXc1dzh6bXAz&utm_source=ig_contact_invite" target="_blank">@slayyyyy_queenz</a></p>
+          <p>📱Telegram: @IT-2401</p>
+          <p>📧<a href="https://du.astanait.edu.kz/login" target="_blank">@Digital University</a></p>
+          <p>🏫 Astana IT University</p>
+        </aside>
+      </div>
+    </section>
+  </main>
 
-    <section class="relative-box">📚 Goals — Become a developer or analyst<br>🏆 Achievements — Olympiads<br>✈️ Dreams — Travel the world</section>
-    <section class="absolute-box">WELCOME</section>
+  <footer>
+    IT-2401.Together &lt;2024–2027&gt;
+  </footer>
 
-    <table>
-        <caption>Information</caption>
-        <thead><tr><th>Menu</th><th>Main content</th></tr></thead>
-        <tbody>
-            <tr><td><ul><li>Home</li></ul></td><td>Sokpakbaeva 20/1</td></tr>
-            <tr><td><ul><li>Major</li></ul></td><td>Computer Science</td></tr>
-            <tr><td><ul><li>University</li></ul></td><td>Astana IT University</td></tr>
-            <tr><td><ul><li>Phone</li></ul></td><td>87075332557</td></tr>
-        </tbody>
-    </table>
 
-    <h3>Contact me</h3>
-    <form>
-        <label>Name:</label>
-        <input type="text" placeholder="Your name">
-        <input type="submit" value="Submit"><br>
-        <label>Email:</label>
-        <input type="text" placeholder="Your email">
-        <input type="submit" value="Submit"><br>
-        <label>Rate the website:</label>
-        <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-    </form>
 
-    <section class="static-box">✨ Motto — Favorite motivating phrase<br>🌍 Languages — Kazakh, Russian, English (B2)<br>🎶 Favorite music/movies — 🎧 🎬</section>
+
+
+<script>
+    // === ПЕРЕКЛЮЧЕНИЕ СТРАНИЦ ===
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // === Анимация с сердечками и смайликом ===
+    function showHearts() {
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.textContent = '💙';
+        heart.style.position = 'fixed';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = Math.random() * 100 + 'vh';
+        heart.style.fontSize = '30px';
+        heart.style.opacity = 0.8;
+        heart.style.transition = 'all 3s linear';
+        document.body.appendChild(heart);
+        setTimeout(() => {
+          heart.style.transform = 'translateY(-100vh)';
+          heart.style.opacity = 0;
+        }, 50);
+        setTimeout(() => heart.remove(), 3000);
+      }
+    }
+    function showWave() {
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.textContent = '👋';
+        heart.style.position = 'fixed';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = Math.random() * 100 + 'vh';
+        heart.style.fontSize = '30px';
+        heart.style.opacity = 0.8;
+        heart.style.transition = 'all 3s linear';
+        document.body.appendChild(heart);
+        setTimeout(() => {
+          heart.style.transform = 'translateY(-100vh)';
+          heart.style.opacity = 0;
+        }, 50);
+        setTimeout(() => heart.remove(), 3000);
+      }
+    }
+  </script>
 </body>
 </html>
